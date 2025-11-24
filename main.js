@@ -1,5 +1,5 @@
 // EX1
-let a = new Array('5', '2', '5', '8', '6');
+let a = Array.from({ length: 5 }, () => Math.floor(Math.random() * 100) + 1);
 console.log("Array original:", a);
 a.sort((a, b) => a - b);
 console.log("Array ordenat:", a);
