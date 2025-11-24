@@ -31,3 +31,11 @@ let arrayUnic = [...new Set(a.concat(b))];
 console.log("Array amb Set (sense duplicats):", arrayUnic);
 
 console.log("===========================")
+
+// EX5
+
+let nums = [1, 3, 6];
+let cubs = nums.map(num => Math.pow(num, 3));
+console.log("Array amb cubs:", cubs);
+
+console.log("===========================")
