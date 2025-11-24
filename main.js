@@ -5,3 +5,8 @@ a.sort((a, b) => a - b);
 console.log("Array ordenat:", a);
 console.log('El primer número: ', a[0])
 console.log("L'ultim número: ", a[a.length - 1])
+
+
+// EX2
+let b = [1, 2, 3, ...a];
+console.log("Nou array amb propagació:", b);
