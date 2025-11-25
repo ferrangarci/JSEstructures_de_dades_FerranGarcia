@@ -81,3 +81,24 @@ while (cua.length > 1) {
 }
 
 console.log("És palíndrom?", esPalindrom);
+
+console.log("===========================")
+
+// EX9
+
+let cuaPelicules = [];
+
+cuaPelicules.push({ titol: "Titanic", any: 1997 });
+cuaPelicules.push({ titol: "Matrix", any: 1999 });
+cuaPelicules.push({ titol: "El Padrí", any: 1972 });
+
+let antiga = cuaPelicules[0];
+for (let i = 1; i < cuaPelicules.length; i++) {
+    if (cuaPelicules[i].any < antiga.any) {
+        antiga = cuaPelicules[i];
+    }
+}
+
+console.log("Pel·lícula més antiga:", antiga);
+
+
