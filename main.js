@@ -59,3 +59,25 @@ console.log("Map amb claus de diferents tipus:");
 for (let [k, v] of map) {
     console.log(k, "=>", v);
 }
+
+console.log("===========================")
+
+// EX8
+
+let paraula = "radar";
+let cua = [];
+
+for (let char of paraula) {
+    cua.push(char);
+}
+console.log(cua)
+
+let esPalindrom = true;
+while (cua.length > 1) {
+    if (cua.shift() !== cua.pop()) {
+        esPalindrom = false;
+        break;
+    }
+}
+
+console.log("És palíndrom?", esPalindrom);
