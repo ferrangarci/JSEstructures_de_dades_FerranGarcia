@@ -47,3 +47,15 @@ let ambMoltaA = paraules.filter(p => (p.match(/a/g) || []).length > 1);
 console.log("Paraules amb més d'una 'a':", ambMoltaA);
 
 console.log("===========================")
+
+// EX7
+
+let map = new Map();
+map.set("clauString", 123);
+map.set(42, "clauNumber");
+map.set(true, "clauBoolean");
+
+console.log("Map amb claus de diferents tipus:");
+for (let [k, v] of map) {
+    console.log(k, "=>", v);
+}
