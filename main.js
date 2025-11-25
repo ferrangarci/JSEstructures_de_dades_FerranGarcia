@@ -39,3 +39,11 @@ let cubs = nums.map(num => Math.pow(num, 3));
 console.log("Array amb cubs:", cubs);
 
 console.log("===========================")
+
+// EX6
+
+let paraules = ["hola", "casa", "sol", "palabra", "amarillo"];
+let ambMoltaA = paraules.filter(p => (p.match(/a/g) || []).length > 1);
+console.log("Paraules amb més d'una 'a':", ambMoltaA);
+
+console.log("===========================")
